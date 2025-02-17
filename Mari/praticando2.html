@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+       text-align: center;
+    }
+    .enviar{
+        border: solid green 5px;
+        background-color: greenyellow; 
+    }
+    .limpar{
+        border: solid red;
+        background-color: rgb(236, 129, 129);
+    }
+</style>
+<body>
+   <div>  
+  <h1>Praticando 1- Formulário HTML Aula 2</h1>  
+  <form>
+<label for="name">Nome:</label>
+<input type="text" id="name" name="name" value="Mariely">
+  </form>
+  <form>
+    <p></p>
+    <form>
+        <label for="namel">Sobreome:</label>
+        <input type="text" id="namel" name="namel" value="Ramos">
+          </form>
+          <form>
+    <p></p>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email">
+  </form>
+  <p></p>
+  <label for="phone">Telefone:</label>
+  <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+  <small>Formato: 123-45-678</small>
+ <p></p>
+ <form>
+    <label for="sla">URL:</label>
+    <input type="url" id="sla" name="sla">
+ </form>
+ <p></p>
+ <form>
+    <label for="quantity">De uma nota de 0 á 10:</label>
+    <input type="number" id="quantity" name="quantity" min="0" max="10" value="0">
+  </form>
+  <form>
+    <p></p>
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha">
+  </form>
+  <p></p>
+  <form action="/action_page.php">
+    <label for="birthday">Data do calendario:</label>
+    <input type="date" id="birthday" name="birthday">
+  </form>
+  <p></p>
+  <label for="cidade">Cidade onde mora:</label>
+  <select name="cidade" id="cidade">
+    <option value="escolha">Escolha uma cidade</option>
+    <option value="Tanabi">Tanabi</option>
+  <option value="Cosmorama">Cosmorama</option>
+  <option value="Votuporanga">Votuporanga</option>
+  <option value="Valentim Gentil">Valentim Gentil</option>
+  <option value="Nhandeara">Nhandeara</option>
+  </select>
+  <P></P>
+  <label for="texto"></label>
+  <textarea id="texto" name="texto" rows="4" cols="40"></textarea>
+<p></p>
+<label for="tempo">Hoje o tempo está:</label>
+<input type="radio" id="Ensolarado" name="tempo" value="Ensolarado">
+<label for="Ensolarado">Ensolarado</label>
+<input type="radio" id="Chuvoso" name="tempo" value="Chuvoso">
+<label for="Chuvoso">Chuvoso</label>
+<input type="radio" id="Nublado" name="tempo" value="Nublado">
+<label for="Nublado">Nublado</label>
+|<p></p>
+<label for="fruta">Escolha sua fruta favorita:</label>
+<input type="checkbox" id="fruta1" name="fruta1" value="Morango">
+<label for="fruta1">Morango</label>
+<input type="checkbox" id="fruta2" name="fruta2" value="Uva">
+<label for="fruta2">Uva</label>
+<input type="checkbox" id="fruta3" name="fruta3" value="Laranja">
+<label for="fruta3">Laranja</label>
+<input type="checkbox" id="fruta4" name="fruta4" value="Abacaxi">
+<label for="fruta3">Abacaxi</label>
+<p></p>
+<form action="destino.html">
+<input  class="enviar" type="submit" value="Enviar">
+<input class="limpar" type="reset" value="Limpar">
+</form>
+</div>
+</body>
+</html>
